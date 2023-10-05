@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form action="">
+        <!-- Esto es para el formulario de nombre, apellidos dni y contraseña  -->
+        <label for="firstName">Nombre</label><br>
+        <input type="text" maxlength="30"><br> 
+        <label for="secondName">Apellidos</label><br>    
+        <input type="text" maxlength="50"><br>
+        <label for="password">Contraseña</label><br>    
+        <input type="password" name="pass" id="pass" minlength="6" maxlength="12"><br>
+        <label for="DNI">DNI</label><br>
+        <input type="text" name="DNI" id="" placeholder="Introduzca su dni" pattern="[0-9]{8}[A-Za-z]{1}" minlength="9" maxlength="9"><br>
+
+        <!-- Esto es para los inputs de Sexo -->
+        <input type="radio" name="Genre" id="Male" checked="checked">
+        <label for="hombre">Hombre</label> <br>
+        <input type="radio" name="Genre" id="Female">
+        <label for="hombre">Mujer</label> <br>
+        
+        <!-- Esto es para añadir archivos -->
+        <label for="archivos">Incluir foto</label>
+        <input type="file" name="foto" id="foto"> <br>
+
+        <input type="checkbox" name="Boletin" id="Boletin">
+        
+
+        <!-- <label for="Genre">Sexo</label><br>
+        <input type="radio" name="Male" id="Male">Hombre <br>
+        <input type="radio" name="Female" id="Female">Mujer <br> -->
+
+
+        
+        
+
+        
+        
+    </form>
+</body>
+</html>

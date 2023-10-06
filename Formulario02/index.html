@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2</title>
+    <script defer>
+        function comprobarClave() {
+            var clave1 = document.form1.clave1.value;
+            var clave2 = document.form1.clave2.value;
+
+            if (clave1 == clave2) {
+                alert("Bienvenid@");
+                document.form1.submit();
+            } else {
+                alert("Las dos contraseñas son distintas...\nVuelva a introducir las contraseñas");
+                document.form1.clave1.value = "";
+                document.form1.clave2.value = "";
+            }
+        }
+    </script>
     
 </head>
 <body>

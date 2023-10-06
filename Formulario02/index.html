@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <h1>Formulario estructurado</h1>
+    <form action="https://www.w3schools.com/html/html_form_elements.asp" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="Nombre">Nombre</label><br>
+            <input type="text" name="Nombre" maxlength="30"><br>
+            <label for="Apellidos">Apellidos</label><br>
+            <input type="text" name="Apellidos" minlength="3" maxlength="80"><br>
+            <label for="DNI">DNI</label><br>
+            <input type="text" name="dni" id="dni">
+        </fieldset>
+        <Fieldset>
+            <legend>Datos de conexion</legend>
+            <label for="Nombre Usuario">Nombre Usuario</label><br>
+            <input type="text" name="User" id="User"><br>
+            <label for="Contraseña">Contraseña</label><br>
+            <input type="password" pattern=".{6,}" />
+        </Fieldset>
+    </form>
+</body>
+</html>

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2</title>
+    
 </head>
 <body>
     <h1>Formulario estructurado</h1>
-    <form action="https://www.w3schools.com/html/html_form_elements.asp" method="get">
+    <form action="https://www.w3schools.com/html/html_form_elements.asp" name="form1" method="get" onsubmit="comprobarClave(); return false">
         <fieldset>
             <legend>Datos personales</legend>
             <label for="Nombre">Nombre</label><br>
@@ -15,15 +16,18 @@
             <label for="Apellidos">Apellidos</label><br>
             <input type="text" name="Apellidos" minlength="3" maxlength="80"><br>
             <label for="DNI">DNI</label><br>
-            <input type="text" name="dni" id="dni">
+            <input type="text" name="dni" maxlength="9" id="dni" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))">
         </fieldset>
-        <Fieldset>
-            <legend>Datos de conexion</legend>
-            <label for="Nombre Usuario">Nombre Usuario</label><br>
+        <fieldset>
+            <legend>Datos de conexión</legend>
+            <label for="Nombre-Usuario">Nombre Usuario</label><br>
             <input type="text" name="User" id="User"><br>
             <label for="Contraseña">Contraseña</label><br>
-            <input type="password" pattern=".{6,}" />
-        </Fieldset>
+            <input type="password" pattern=".{6,}" name="clave1" required><br>
+            <label for="Repeat-Password">Repite la contraseña</label> <br>
+            <input type="password" pattern=".{6,}" name="clave2" required>
+        </fieldset>
+        <input type="submit" value="Enviar datos">
     </form>
 </body>
 </html>

@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2</title>
     <script defer>
+        // Script para comparar contraseñas 
         function comprobarClave() {
             var clave1 = document.form1.clave1.value;
             var clave2 = document.form1.clave2.value;
-
+        // Este if es para que si clave 1 es igual a clave dos, salte un alert de bienvenido 
             if (clave1 == clave2) {
                 alert("Bienvenid@");
+                // Envia el formulario
                 document.form1.submit();
             } else {
                 alert("Las dos contraseñas son distintas...\nVuelva a introducir las contraseñas");
+                // Esto hace que al no ser iguales las contraseñas, resetee los campos a vacío.
                 document.form1.clave1.value = "";
                 document.form1.clave2.value = "";
             }

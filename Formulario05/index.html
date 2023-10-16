@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 5</title>
+</head>
+<body>
+    <h1>Información sobre el producto</h1>
+<form action="https://www.w3schools.com/html/html_form_elements.asp">
+    
+    <fieldset>
+        <legend>Datos básicos</legend>
+        <label for="Name">Nombre</label><br>
+        <input type="text" name="Name" maxlength="100" size="100" required> 
+        <br>
+        <label for="Descripcion">Descripción</label> <br>
+        <textarea id="desc" name="desc" cols="100" rows="20"></textarea>
+		<br>
+        <label for="photo">Foto</label>
+        <input type="file">
+        <br>
+        <input type="checkbox" name="contador" id="contador">
+		<label for="contador">Añadir contador de visitas</label>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Datos económicos</legend>
+        <label for="Price">Precio</label>
+        <input type="number" name="Price" id="Price"> € &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="impuestos">Impuestos</label>
+        <select name="impuestos" id="impuestos">
+            <option value="4">4 %</option>
+            <option value="7">7 %</option>
+            <option value="18">18 %</option>
+            <option value="21">21 %</option>
+        </select>
+        <br><br>
+        <label for="Promocion">Promoción</label> <br>
+        <input type="radio" name="promo" id="ninguna" value="ninguna" checked>
+        <label for="ninguna">Ninguna</label>
+        <br>
+        <input type="radio" name="promo" id="transporte" value="transporte">
+        <label for="transporte">Transporte gratis</label>
+        <br>
+        <input type="radio" name="promo" id="descuento" value="descuento">
+        <label for="descuento">Descuento 5%</label>
+    </fieldset>
+    <input type="submit" name="enviar" id="enviar">
+</form>
+</body>
+</html>
